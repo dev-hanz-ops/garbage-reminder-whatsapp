@@ -30,7 +30,7 @@ def check_date_notify(dates: list[tuple[date, list[str]]]):
             "to": os.getenv("WHAPI_GROUP"),
             "body": (
                 f"[🗑️-Reminder]\n"
-                f"Hi alle. Morgen geht Müll: {",".join(dates[0][1])}.\n"
+                f"Hi alle. Morgen geht Müll: {','.join(dates[0][1])}.\n"
                 f"Bitte checkt, wer dran ist, und stellt raus.\n"
                 f"🗑️🗑️🗑️"
             ),
