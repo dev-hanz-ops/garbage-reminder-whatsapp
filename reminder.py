@@ -36,7 +36,7 @@ def check_date_notify(dates: list[tuple[date, list[str]]]):
             ),
         }
         headers = {
-            "Authorization": f"Bearer {os.getenv("WHAPI_TOKEN")}",
+            "Authorization": f"Bearer {os.getenv('WHAPI_TOKEN')}",
         }
         requests.post(
             f"https://gate.whapi.cloud/messages/text", json=params, headers=headers
